@@ -8,7 +8,7 @@ defmodule Watson.RTM do
 
   def handle_message(message = %{type: "message"}, slack, state) do
     [routes] = state
-    reply = Watson.Router.route_message(routes,message.text,slack)
+    reply = Watson.Router.route_message(routes,message,slack)
     case reply do
       nil -> nil
       _ -> send_message(reply,message.channel,slack)

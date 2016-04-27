@@ -2,7 +2,7 @@ defmodule Watson.Router do
   def route_message(routes_module, message,slack) do
     result =
       Enum.find routes_module.routes(), fn {regex, _module_function} ->
-        Regex.match?(regex, message)
+        Regex.match?(regex, message.text)
       end
 
     if result do
