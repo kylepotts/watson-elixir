@@ -7,7 +7,8 @@ defmodule Watson.Router do
 
     if result do
       {_regex, {module, function}} = result
-      apply(module, function, [message,slack])
+      reg_matches = Regex.named_captures(_regex,message.text)
+      apply(module, function, [message, reg_matches, slack])
     else
       nil
     end

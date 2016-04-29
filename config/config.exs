@@ -4,6 +4,9 @@ use Mix.Config
 config :watson,
   api_key: System.get_env("SLACK_API_TOKEN")
 
+config :tubex, Tubex,
+  api_key: System.get_env("YOUTUBE_API_TOKEN")
+
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
 # file won't be loaded nor affect the parent project. For this reason,
