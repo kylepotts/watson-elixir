@@ -16,7 +16,7 @@ defmodule Watson.Mixfile do
   def application do
     [
       mod: { Watson, [] },
-      applications: [:logger, :slack, :tubex]
+      applications: [:logger, :slack, :tubex, :websocket_client]
     ]
   end
 
@@ -32,6 +32,7 @@ defmodule Watson.Mixfile do
   defp deps do
     [{:slack, "~> 0.4.2"},
     {:websocket_client, git: "https://github.com/jeremyong/websocket_client"},
-    {:tubex, "~> 0.0.1"}]
+    {:tubex, "~> 0.0.1"},
+    {:exrm, "~> 0.18.1"}]
   end
 end

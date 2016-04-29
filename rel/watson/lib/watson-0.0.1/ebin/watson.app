@@ -1,0 +1,11 @@
+{application,watson,
+             [{registered,[]},
+              {description,"watson"},
+              {vsn,"0.0.1"},
+              {modules,['Elixir.Watson','Elixir.Watson.Commands.Hello',
+                        'Elixir.Watson.Commands.Youtube','Elixir.Watson.RTM',
+                        'Elixir.Watson.Router','Elixir.Watson.Supervisor',
+                        'Elixir.WatsonRoutes']},
+              {mod,{'Elixir.Watson',[]}},
+              {applications,[kernel,stdlib,elixir,logger,slack,tubex,
+                             websocket_client]}]}.
