@@ -1,8 +1,9 @@
-if [ $1 = "start" ] 
+if [ $1 = "start" ]
 then
     git pull origin master
     mix deps.get
     mix compile
+    mix release
     echo "Starting Watson"
     if [ -f ./rel/watson/bin/watson ]
     then
