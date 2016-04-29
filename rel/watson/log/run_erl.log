@@ -1,8 +1,0 @@
-run_erl [26312] Fri Apr 29 17:44:38 2016
-Args before exec of shell:
-run_erl [26312] Fri Apr 29 17:44:38 2016
-argv[0] = sh
-run_erl [26312] Fri Apr 29 17:44:38 2016
-argv[1] = -c
-run_erl [26312] Fri Apr 29 17:44:38 2016
-argv[2] = exec "/home/kyle/dev/elixir/watson/rel/watson/bin/watson" "console"
